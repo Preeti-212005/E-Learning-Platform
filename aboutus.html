@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us - Course Portal</title>
+    <style>
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            background-color: #333;
+            padding: 10px 0;
+            flex-wrap: wrap;
+            position: relative;
+            align-items: end;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* Dropdown styling */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* About Us page content */
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: pink;
+        }
+
+        .about-section h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            font-size: 1.2em;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        /* Mission, Vision, Values Section */
+        .values-section {
+            padding: 50px;
+            background-color: pink;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .values-section div {
+            flex: 1;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            background-color: cyan;
+        }
+
+        .values-section h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .values-section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        /* Meet Us Section */
+        .meet-section {
+            padding: 50px;
+            background-color: lightyellow;
+            text-align: center;
+        }
+
+        .meet-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .meet-section .team {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            flex: 1;
+            max-width: 300px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .team-member h3 {
+            font-size: 1.5em;
+            margin: 15px 0;
+        }
+
+        .team-member p {
+            font-size: 1.1em;
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="home.html">HOME</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <div class="dropdown">
+            <a href="courses.html">COURSES</a>
+            <div class="dropdown-content">
+                <a href="python.html">Python</a>
+                <a href="js.html">JS</a>
+                <a href="html.html">HTML</a>
+                <a href="datastructure.html">Data Structure</a>
+            </div>
+        </div>
+        <a href="classnote.html">CLASS NOTES</a>
+        <a href="gallary.html">GALLERY</a>
+        <a href="testimonials.html">TESTIMONIALS</a>
+        <a href="contactus.html">CONTACT US</a>
+        <a href="placement.html">PLACEMENT</a>
+        <a href="courses.html">COURSES</a>
+    </nav>
+
+    <!-- About Us Section -->
+    <section class="about-section">
+        <h1>About Us</h1>
+        <p>
+            Welcome to Course Portal, your trusted partner in learning and mastering programming skills. 
+            Established with a mission to provide high-quality education to all, we focus on offering industry-relevant 
+            courses to help you succeed in the competitive tech world.
+        </p>
+        <p>
+            Whether you're a beginner, intermediate, or advanced learner, our courses are designed to enhance your 
+            knowledge and skills. With expert instructors and up-to-date content, we ensure that you stay ahead in your career.
+        </p>
+    </section>
+
+    <!-- Mission, Vision, and Values Section -->
+    <section class="values-section">
+        <div>
+            <h2>Our Mission</h2>
+            <p>
+                To deliver high-quality, accessible education that empowers individuals to achieve their career goals 
+                in the tech industry through innovative learning techniques.
+            </p>
+        </div>
+        <div>
+            <h2>Our Vision</h2>
+            <p>
+                To be the leading global platform for programming and web development education, creating a future where 
+                technology skills are within everyone’s reach.
+            </p>
+        </div>
+        <div>
+            <h2>Our Values</h2>
+            <p>
+                We believe in integrity, excellence, and continuous improvement. Our platform is designed to promote 
+                collaboration, creativity, and innovation in learning.
+            </p>
+        </div>
+    </section>
+
+    <!-- Meet Us Section -->
+    <section class="meet-section">
+        <h2>Meet Us</h2>
+        <div class="team">
+            <div class="team-member">
+                <img src="images.jpeg" alt="Founder">
+                <h3>Jane Doe</h3>
+                <p>Founder & CEO</p>
+                <p>Jane founded Course Portal with a passion for providing accessible tech education to everyone. She has over 15 years of experience in software development and education.</p>
+            </div>
+            <div class="team-member">
+                <img src="intructor.jpeg" alt="Instructor">
+                <h3>John Smith</h3>
+                <p>Lead Instructor</p>
+                <p>John is our expert instructor with a focus on web development. He has trained over 5,000 students in JavaScript, Python, and front-end development technologies.</p>
+            </div>
+            <div class="team-member">
+                <img src="designer.jpeg" alt="Designer">
+                <h3>Emily Johnson</h3>
+                <p>UI/UX Designer</p>
+                <p>Emily ensures that our platform is not only functional but also intuitive and user-friendly. She has a background in graphic design and user experience research.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Course Portal. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

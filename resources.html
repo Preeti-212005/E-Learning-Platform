@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resources - Course Portal</title>
+    <style>
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            background-color: #333;
+            padding: 10px 0;
+            flex-wrap: wrap;
+            position: relative;
+            align-items: end;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* Main content styling */
+        .resource-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+        }
+
+        .resource-section h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .resource-list {
+            text-align: left;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .resource-list h3 {
+            font-size: 1.5em;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .resource-list ul {
+            list-style-type: square;
+        }
+
+        .resource-list a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .resource-list a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="home.html">HOME</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="courses.html">COURSES</a>
+        <a href="classnote.html">CLASS NOTES</a>
+        <a href="gallary.html">GALLERY</a>
+        <a href="testimonials.html">TESTIMONIALS</a>
+        <a href="contactus.html">CONTACT US</a>
+        <a href="placement.html">PLACEMENT</a>
+        <a href="resources.html">RESOURCES</a> <!-- New menu item for Resources -->
+    </nav>
+
+    <!-- Resources Section -->
+    <section class="resources-section">
+        <h1>Learning Resources</h1>
+        <p>Explore the following resources to deepen your knowledge and skills in programming and web development.</p>
+
+        <div class="resource-list">
+            <!-- Books Section -->
+            <h3>Books</h3>
+            <ul>
+                <li><a href="https://www.amazon.com/Python-Crash-Course-Eric-Matthes/dp/1593279280" target="_blank">Python Crash Course by Eric Matthes</a></li>
+                <li><a href="https://www.amazon.com/Eloquent-JavaScript-3rd-Modern-Introduction/dp/1593279507" target="_blank">Eloquent JavaScript by Marijn Haverbeke</a></li>
+                <li><a href="https://www.amazon.com/HTML-CSS-Design-Build-Websites/dp/1118008189" target="_blank">HTML & CSS: Design and Build Websites by Jon Duckett</a></li>
+            </ul>
+
+            <!-- Websites Section -->
+            <h3>Websites</h3>
+            <ul>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools - Web Development Tutorials</a></li>
+                <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp - Learn to Code for Free</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs - Resources for Developers</a></li>
+            </ul>
+
+            <!-- Tools Section -->
+            <h3>Tools</h3>
+            <ul>
+                <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code - Free Code Editor</a></li>
+                <li><a href="https://git-scm.com/" target="_blank">Git - Version Control System</a></li>
+                <li><a href="https://www.postman.com/" target="_blank">Postman - API Development Tool</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Course Portal. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

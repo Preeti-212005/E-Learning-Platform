@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Notes - Course Portal</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            background-color: #333;
+            padding: 10px 0;
+            flex-wrap: wrap;
+            position: relative;
+            align-items: end;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* Main content styling */
+        .python-notes-section {
+            padding: 50px 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .python-notes-section h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .note {
+            margin: 20px 0;
+        }
+
+        .note h2 {
+            font-size: 1.8em;
+            color: #333;
+        }
+
+        .note p {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="home.html">HOME</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <div class="dropdown">
+            <a href="courses.html">COURSES</a>
+            <div class="dropdown-content">
+                <a href="python.html">Python</a>
+                <a href="js.html">JS</a>
+                <a href="html.html">HTML</a>
+                <a href="datastructure.html">Data Structure</a>
+            </div>
+        </div>
+        <a href="classnote.html">CLASS NOTES</a>
+        <a href="gallary.html">GALLERY</a>
+        <a href="testimonials.html">TESTIMONIALS</a>
+        <a href="contactus.html">CONTACT US</a>
+        <a href="placement.html">PLACEMENT</a>
+    </nav>
+
+    <!-- Python Notes Section -->
+    <section class="pythonnotes-section">
+        <h1>Python Notes</h1>
+
+        <div class="note">
+            <h2>Introduction to Python</h2>
+            <p>Python is a high-level, interpreted programming language known for its easy readability and dynamic typing. It is widely used for web development, data analysis, artificial intelligence, scientific computing, and more.</p>
+        </div>
+
+        <div class="note">
+            <h2>Basic Syntax</h2>
+            <p>Python uses indentation to define code blocks. Here’s a simple example of a function:</p>
+            <pre>
+def greet(name):
+    print(f"Hello, {name}!")
+greet("World")
+            </pre>
+        </div>
+
+        <div class="note">
+            <h2>Data Types</h2>
+            <p>Python has various built-in data types:</p>
+            <ul>
+                <li><strong>Integers:</strong> Whole numbers, e.g., 5, -10</li>
+                <li><strong>Floats:</strong> Decimal numbers, e.g., 3.14, -0.001</li>
+                <li><strong>Strings:</strong> Text data, e.g., "Hello, Python!"</li>
+                <li><strong>Lists:</strong> Ordered collections, e.g., [1, 2, 3, 4]</li>
+                <li><strong>Dictionaries:</strong> Key-value pairs, e.g., {"name": "Alice", "age": 25}</li>
+            </ul>
+        </div>
+
+        <div class="note">
+            <h2>Control Flow</h2>
+            <p>Python uses <strong>if statements</strong> to control the flow of execution:</p>
+            <pre>
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")
+            </pre>
+        </div>
+
+        <div class="note">
+            <h2>Loops</h2>
+            <p>Python supports both <strong>for loops</strong> and <strong>while loops</strong>:</p>
+            <pre>
+for i in range(5):
+    print(i)
+            </pre>
+        </div>
+
+        <div class="note">
+            <h2>Functions</h2>
+            <p>Functions in Python are defined using the <strong>def</strong> keyword:</p>
+            <pre>
+def add(x, y):
+    return x + y
+result = add(5, 3)
+print(result)  # Output: 8
+            </pre>
+        </div>
+
+        <div class="note">
+            <h2>Conclusion</h2>
+            <p>Python is a versatile language that is beginner-friendly and has a vast ecosystem of libraries and frameworks, making it a great choice for various programming tasks.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Course Portal. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

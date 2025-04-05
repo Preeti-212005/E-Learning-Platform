@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Page - Course Portal</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2d2d2d;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Terminal container styling */
+        .terminal {
+            width: 80%;
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .terminal-header {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #444;
+        }
+
+        .terminal-header .buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .terminal-header .buttons div {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .red {
+            background-color: #ff5f56;
+        }
+
+        .yellow {
+            background-color: #ffbd2e;
+        }
+
+        .green {
+            background-color: #27c93f;
+        }
+
+        .terminal-header .title {
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .terminal-header .title span {
+            font-size: 14px;
+        }
+
+        .terminal-body {
+            padding: 20px;
+            background-color: #000;
+            min-height: 400px;
+            font-family: 'Courier New', monospace;
+            font-size: 16px;
+        }
+
+        /* Prompt and command input styling */
+        .terminal-input {
+            color: #0f0;
+        }
+
+        .terminal-output {
+            color: #fff;
+        }
+
+        .input-area {
+            display: flex;
+        }
+
+        .input-area input {
+            background: none;
+            border: none;
+            outline: none;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            font-size: 16px;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Terminal container -->
+    <div class="terminal">
+        <!-- Terminal header -->
+        <div class="terminal-header">
+            <div class="buttons">
+                <div class="red"></div>
+                <div class="yellow"></div>
+                <div class="green"></div>
+            </div>
+            <div class="title">
+                <span>Terminal - Interactive CLI</span>
+            </div>
+        </div>
+
+        <!-- Terminal body (the actual terminal area) -->
+        <div class="terminal-body" id="terminal-body">
+            <p class="terminal-output">Welcome to the Course Portal Terminal!</p>
+            <p class="terminal-output">Type 'help' to see available commands.</p>
+        </div>
+
+        <!-- Input area -->
+        <div class="input-area">
+            <span class="terminal-input">user@portal:~$</span>
+            <input type="text" id="commandInput" autocomplete="off" onkeypress="handleCommand(event)">
+        </div>
+    </div>
+
+    <script>
+        // Handle command input
+        function handleCommand(event) {
+            if (event.key === "Enter") {
+                const input = document.getElementById('commandInput');
+                const command = input.value.trim().toLowerCase();
+                const terminalBody = document.getElementById('terminal-body');
+                let output = '';
+
+                switch (command) {
+                    case 'help':
+                        output = `
+                            <p class="terminal-output">Available commands:</p>
+                            <p class="terminal-output">- 'courses': List available courses.</p>
+                            <p class="terminal-output">- 'contact': Show contact information.</p>
+                            <p class="terminal-output">- 'clear': Clear the terminal.</p>
+                        `;
+                        break;
+                    case 'courses':
+                        output = `
+                            <p class="terminal-output">Available courses:</p>
+                            <p class="terminal-output">- Python</p>
+                            <p class="terminal-output">- JavaScript</p>
+                            <p class="terminal-output">- HTML</p>
+                            <p class="terminal-output">- Data Structure</p>
+                            <p class="terminal-output">- Bootstrap</p>
+                        `;
+                        break;
+                    case 'contact':
+                        output = `
+                            <p class="terminal-output">Contact us at: info@courseportal.com</p>
+                        `;
+                        break;
+                    case 'clear':
+                        terminalBody.innerHTML = '';
+                        input.value = '';
+                        return;
+                    default:
+                        output = `<p class="terminal-output">Command not found: ${command}</p>`;
+                        break;
+                }
+
+                // Display output
+                terminalBody.innerHTML += `<p class="terminal-input">user@portal:~$ ${command}</p>`;
+                terminalBody.innerHTML += output;
+
+                // Scroll to the bottom
+                terminalBody.scrollTop = terminalBody.scrollHeight;
+
+                // Clear input
+                input.value = '';
+            }
+        }
+    </script>
+</body>
+</html>

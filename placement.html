@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Placement - Course Portal</title>
+    <style>
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            background-color: #333;
+            padding: 10px 0;
+            flex-wrap: wrap;
+            position: relative;
+            align-items: end;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* Main content styling */
+        .hero-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+        }
+
+        .hero-section h1 {
+            font-size: 3em;
+        }
+
+        .hero-section p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        /* Placement success section */
+        .success-section {
+            padding: 50px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .success-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .success-stories {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .story-card {
+            flex: 1;
+            max-width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .story-card img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .story-card h3 {
+            font-size: 1.5em;
+            margin: 15px 0;
+        }
+
+        .story-card p {
+            font-size: 1.1em;
+        }
+
+        /* Partner companies section */
+        .partners-section {
+            padding: 50px;
+            background-color: #e9f7ff;
+            text-align: center;
+        }
+
+        .partners-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .partners-logos {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .partners-logos img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="home.html">HOME</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <div class="dropdown">
+            <a href="courses.html">COURSES</a>
+            <div class="dropdown-content">
+                <a href="python.html">Python</a>
+                <a href="js.html">JavaScript</a>
+                <a href="html.html">HTML</a>
+                <a href="datastructure.html">Data Structure</a>
+            </div>
+        </div>
+        <a href="classnote.html">CLASS NOTES</a>
+        <a href="gallary.html">GALLERY</a>
+        <a href="testimonials.html">TESTIMONIALS</a>
+        <a href="contactus.html">CONTACT US</a>
+        <a href="placement.html">PLACEMENT</a>
+        <a href="resources.html">RESOURCES</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Job Placement Assistance</h1>
+        <p>At Course Portal, we don't just teach you skills, we help you land your dream job!</p>
+        <p>Our dedicated placement team provides end-to-end support for your career success.</p>
+    </section>
+
+    <!-- Placement Success Stories -->
+    <section class="success-section">
+        <h2>Our Success Stories</h2>
+        <div class="success-stories">
+            <div class="story-card">
+                <img src="Emily.jpeg" alt="Student 1">
+                <h3>Emily Watson</h3>
+                <p>Software Engineer at Google</p>
+                <p>"Course Portal transformed my career! The skills I learned here helped me land my dream job."</p>
+            </div>
+            <div class="story-card">
+                <img src="Michael.jpeg" alt="Student 2">
+                <h3>Michael Brown</h3>
+                <p>Full-Stack Developer at Amazon</p>
+                <p>"The hands-on experience at Course Portal gave me a competitive edge in the job market."</p>
+            </div>
+            <div class="story-card">
+                <img src="sophie.jpeg" alt="Student 3">
+                <h3>Sophia Davis</h3>
+                <p>Front-End Developer at Facebook</p>
+                <p>"With the guidance and support of the placement team, I was able to secure a great position."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Companies Section -->
+    <section class="partners-section">
+        <h2>Our Hiring Partners</h2>
+        <div class="partners-logos">
+            <img src="google.jpeg" alt="Google">
+            <img src="amazon.png" alt="Amazon">
+            <img src="facebook.jpeg" alt="Facebook">
+            <img src="microsoft.jpeg" alt="Microsoft">
+            <img src="apple.jpeg" alt="Apple">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Course Portal. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

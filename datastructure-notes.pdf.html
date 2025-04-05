@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures Notes - Course Portal</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            background-color: #333;
+            padding: 10px 0;
+            flex-wrap: wrap;
+            position: relative;
+            align-items: end;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* Main content styling */
+        .datastructure-notes-section {
+            padding: 50px 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .datastructure-notes-section h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .note {
+            margin: 20px 0;
+        }
+
+        .note h2 {
+            font-size: 1.8em;
+            color: #333;
+        }
+
+        .note p {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="home.html">HOME</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <div class="dropdown">
+            <a href="courses.html">COURSES</a>
+            <div class="dropdown-content">
+                <a href="python.html">Python</a>
+                <a href="js.html">JS</a>
+                <a href="html.html">HTML</a>
+                <a href="datastructure.html">Data Structure</a>
+            </div>
+        </div>
+        <a href="classnote.html">CLASS NOTES</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="testimonials.html">TESTIMONIALS</a>
+        <a href="contactus.html">CONTACT US</a>
+        <a href="placement.html">PLACEMENT</a>
+    </nav>
+
+    <!-- Data Structures Notes Section -->
+    <section class="datastructure-notes-section">
+        <h1>Data Structures Notes</h1>
+
+        <div class="note">
+            <h2>Introduction to Data Structures</h2>
+            <p>Data structures are ways to organize and store data so that they can be accessed and modified efficiently. They are essential for creating efficient algorithms.</p>
+        </div>
+
+        <div class="note">
+            <h2>Types of Data Structures</h2>
+            <p>Data structures can be classified into two main categories:</p>
+            <ul>
+                <li><strong>Linear Data Structures:</strong> Elements are arranged in a sequential manner. Examples include arrays, linked lists, stacks, and queues.</li>
+                <li><strong>Non-linear Data Structures:</strong> Elements are arranged in a hierarchical manner. Examples include trees and graphs.</li>
+            </ul>
+        </div>
+
+        <div class="note">
+            <h2>Arrays</h2>
+            <p>An array is a collection of elements identified by index or key. It can store multiple values of the same type in a contiguous block of memory.</p>
+            <pre>
+let fruits = ["Apple", "Banana", "Cherry"];
+console.log(fruits[1]); // Output: Banana
+            </pre>
+        </div>
+
+        <div class="note">
+            <h2>Linked Lists</h2>
+            <p>A linked list is a linear data structure where each element (node) contains a value and a reference (link) to the next node in the sequence.</p>
+            <pre>
+class Node {
+    constructor(data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+            </pre>
+        </div>
+
+        <div class="note">
+            <h2>Stacks</h2>
+            <p>A stack is a collection of elements that follows the Last In First Out (LIFO) principle. You can add or remove elements only from one end.</p>
+            <pre>
+let stack = [];
+stack.push(1); // Add to stack
+stack.push(2);
+let last = stack.pop(); // Remove from stack
+console.log(last); // Output: 2
+            </pre>
+        </div>
+
+        <div class="note">
+            <h2>Queues</h2>
+            <p>A queue is a collection of elements that follows the First In First Out (FIFO) principle. Elements are added to the back and removed from the front.</p>
+            <pre>
+let queue = [];
+queue.push(1); // Add to queue
+queue.push(2);
+let first = queue.shift(); // Remove from queue
+console.log(first); // Output: 1
+            </pre>
+        </div>
+
+        <div class="note">
+            <h2>Trees</h2>
+            <p>A tree is a hierarchical data structure consisting of nodes connected by edges. The top node is called the root, and nodes without children are called leaves.</p>
+        </div>
+
+        <div class="note">
+            <h2>Graphs</h2>
+            <p>A graph is a collection of nodes (vertices) and edges connecting them. Graphs can be directed or undirected, and they can represent complex relationships.</p>
+        </div>
+
+        <div class="note">
+            <h2>Conclusion</h2>
+            <p>Understanding data structures is crucial for effective programming and problem-solving. Choosing the right data structure can optimize performance and efficiency.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Course Portal. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

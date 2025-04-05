@@ -1,1 +1,1 @@
-# E-Learning-Platform
+# Course-Project

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Notes - Course Portal</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            background-color: #333;
+            padding: 10px 0;
+            flex-wrap: wrap;
+            position: relative;
+            align-items: end;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* Main content styling */
+        .javascript-notes-section {
+            padding: 50px 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .javascript-notes-section h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .note {
+            margin: 20px 0;
+        }
+
+        .note h2 {
+            font-size: 1.8em;
+            color: #333;
+        }
+
+        .note p {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="home.html">HOME</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <div class="dropdown">
+            <a href="courses.html">COURSES</a>
+            <div class="dropdown-content">
+                <a href="python.html">Python</a>
+                <a href="js.html">JS</a>
+                <a href="html.html">HTML</a>
+                <a href="datastructure.html">Data Structure</a>
+            </div>
+        </div>
+        <a href="classnote.html">CLASS NOTES</a>
+        <a href="gallary.html">GALLERY</a>
+        <a href="testimonials.html">TESTIMONIALS</a>
+        <a href="contactus.html">CONTACT US</a>
+        <a href="placement.html">PLACEMENT</a>
+    </nav>
+
+    <!-- JavaScript Notes Section -->
+    <section class="javascript-notes-section">
+        <h1>JavaScript Notes</h1>
+
+        <div class="note">
+            <h2>Introduction to JavaScript</h2>
+            <li><a href="introduction to javascript.html" target="_blank">Introduction to javascript</a></li>
+            <p>JavaScript is a versatile programming language primarily used for creating interactive web pages. It allows developers to implement complex features on web pages, such as animations, form validations, and dynamic content updates.</p>
+        </div>
+
+        <div class="note">
+            <h2>Basic Syntax</h2>
+            <p>JavaScript syntax is the set of rules that define a correctly structured JavaScript program. A simple example:</p>
+            <pre>
+console.log("Hello, World!");
+            </pre>
+        </div>
+
+        <div class="note">
+            <h2>Variables</h2>
+            <p>Variables are containers for storing data values. You can declare variables using <strong>var</strong>, <strong>let</strong>, or <strong>const</strong>:</p>
+            <pre>
+let name = "Alice"; // variable that can be reassigned
+const age = 25; // constant variable
+            </pre>
+        </div>
+
+        <div class="note">
+            <h2>Data Types</h2>
+            <p>JavaScript supports several data types:</p>
+            <ul>
+                <li><strong>String:</strong> Text values, e.g., "Hello"</li>
+                <li><strong>Number:</strong> Numeric values, e.g., 42</li>
+                <li><strong>Boolean:</strong> true or false</li>
+                <li><strong>Object:</strong> Collection of key-value pairs</li>
+                <li><strong>Array:</strong> List-like objects</li>
+            </ul>
+        </div>
+
+        <div class="note">
+            <h2>Control Flow</h2>
+            <p>JavaScript uses conditional statements to control the flow of execution:</p>
+            <pre>
+if (age >= 18) {
+    console.log("You are an adult.");
+} else {
+    console.log("You are a minor.");
+}
+            </pre>
+        </div>
+
+        <div class="note">
+            <h2>Functions</h2>
+            <p>Functions are reusable blocks of code. They can be defined using the <strong>function</strong> keyword:</p>
+            <pre>
+function add(a, b) {
+    return a + b;
+}
+let sum = add(5, 3);
+console.log(sum);  // Output: 8
+            </pre>
+        </div>
+
+        <div class="note">
+            <h2>Conclusion</h2>
+            <p>JavaScript is essential for web development, enabling interactive and dynamic web applications. It continues to evolve with new features and frameworks.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Course Portal. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
